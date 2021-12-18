@@ -1,0 +1,107 @@
+main {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    /* overflow: hidden; */
+
+    background-image: url("images/rajCurr.png");
+    /* background-repeat: no-repeat; */
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    /* background-clip: url("images/vid.mp4"); */
+
+    min-height: 30rem;
+    min-width: 50rem;
+}
+
+.mainBox{
+
+    height: 30rem;
+    width: 50rem;
+    /* justify-content: center;
+    align-items: center;
+    display: flex;  */
+    /* flex-direction: row; */
+
+    background-color: rgba(216, 216, 216, 0.767);
+    
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.7) 10px 10px 20px;
+    
+    margin-right: 2.5rem;
+    margin-bottom: 2rem;
+
+    /* min-width: 50rem; */
+}
+
+.enterNum{
+    height: 3rem;
+    width: 4rem;
+    /* background-color: rgb(233, 212, 121); */
+}
+
+.enterNew{
+    height: 3.5rem;
+    width: 6rem;
+    /* padding-left: 1rem; */
+    /* background-color: rgb(233, 212, 121); */
+}
+
+/* .upper{
+    height: 10rem;
+    width: 45rem;
+} */
+
+/* .calcBtns{
+    padding-top: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+} */
+
+
+
+.upper{
+    justify-content: space-between;
+    align-items: center;
+    display: flex; 
+    
+    padding-top: 2rem;
+    flex-direction: row; 
+}
+.form1{
+    width: 16rem;
+    height: 6rem;
+}
+
+.pickers{
+    width: 13rem;
+    /* background-color: gray; */
+}
+
+.bgbg{
+    background-color: gray;
+}
+
+.btn{
+    margin-top: 1.5rem;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px #888888;
+    background-color: pink;
+    /* margin-right: -1rem; */
+}
+
+.calcBtn{
+    min-width: 20rem;
+}
+
+.boxx{
+    min-width: 50rem;
+}
+
+.form-control-lg{
+    height: 6rem;
+    /* font-size: 4rem; */
+}

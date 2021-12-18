@@ -1,0 +1,140 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Currency Converter </title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="mainBox">
+               
+                <div class="container boxx">
+                    <div class="row boxx">
+                        <div class="col-5 ms-5 mt-5">
+
+                            <div class="picker1 pickers mb-3" >
+                                <label for="exampleDataList" class="form-label"></label>
+                                            <input class="form-control btn-outline-dark" list="datalistOptions" id="inputList" placeholder="Convert from">
+                                            <datalist id="datalistOptions">
+                                            <!-- <option value="San Francisco (SF)">
+                                            <option value="New York">
+                                            <option value="Seattle">
+                                            <option value="Los Angeles">                                                
+                                            <option value="Chicago"> -->
+                                </datalist>
+                            </div>
+
+                            <div class="form1 mb-5">
+                                <input class="form-control form-control-lg btn-outline-dark" type="text" placeholder="0" aria-label="readonly input example" id="inputForm">
+                            </div>
+
+                            <div class="picker2 pickers mb-3">
+                                <label for="exampleDataList" class="form-label"></label>
+                                            <input class="form-control btn-outline-dark" list="datalistOptions" id="outputList" placeholder="Convert to">
+                                            <datalist id="datalistOptions">
+                                            <!-- <option value="San Francisco">
+                                            <option value="New York">
+                                            <option value="Seattle">                                                
+                                            <option value="Los Angeles">
+                                            <option value="Chicago"> -->
+                                </datalist>
+                            </div>
+
+                            <div class="form1">
+                                <input class="form-control form-control-lg btn-outline-dark" type="text" placeholder="0" aria-label="readonly input example" id="outputForm" readonly>
+                            </div>
+
+                            <!-- <div class="values ps-5 pe-5 pt-3 ms-5 me-5">
+                                <div class="form1">
+                                    <input class="form-control form-control-lg" type="text" value="0" aria-label="readonly input example" readonly>
+                                </div>
+                                <div class="form1">
+                                    <input class="form-control form-control-lg" type="text" value="0" aria-label="readonly input example" readonly>
+                                </div>
+                            </div> -->
+
+                        </div>
+                            
+                        <div class="col mt-5 me-2">
+                            
+                            <div class ="calcBtn">
+                            <div class="container ">
+
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" id="1" value="1" class="btn btn-dark btn-outline-light enterNum">1</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="2" value="2" class="btn btn-dark btn-outline-light enterNum">2</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="3" value="3" class="btn btn-dark btn-outline-light enterNum">3</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" id="4" value="4" class="btn btn-dark btn-outline-light enterNum">4</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="5" value="5" class="btn btn-dark btn-outline-light enterNum">5</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="6" value="6" class="btn btn-dark btn-outline-light enterNum">6</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" id="7" value="7" class="btn btn-dark btn-outline-light enterNum">7</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="8" value="8" class="btn btn-dark btn-outline-light enterNum">8</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="9" value="9" class="btn btn-dark btn-outline-light enterNum">9</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" id="decimal" value="decimal" class="btn btn-dark btn-outline-light enterNum">.</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="0" value="0" class="btn btn-dark btn-outline-light enterNum">0</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" id="x" value="x" class="btn btn-dark btn-outline-light enterNum">x</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-7">
+                                        <button type="button" id="clear" value="clear" class="btn btn-dark btn-outline-light enterNew">clear</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit" id="submit" class="btn btn-dark btn-outline-light enterNew">enter</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </body>
+
+</html>
