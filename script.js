@@ -196,3 +196,18 @@ enterBtn.addEventListener('keyup', function()
 })
 /////////
 
+inputLi.onkeyup = function(event)
+{
+    if(event.keyCode == 13)
+    {
+        checkSubmit();
+    }
+}
+
+outputLi.onkeyup = function(event)
+{
+    if(event.keyCode == 13)
+    {
+        checkSubmit();
+    }
+}
